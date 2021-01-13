@@ -2,6 +2,19 @@
 ## SPDX-FileCopyrightText: 2020 Splunk, Inc. <sales@splunk.com>
 ## SPDX-License-Identifier: LicenseRef-Splunk-1-2020
 ##
--r tests/requirements.txt
-pip install lovely-pytest-docker
+
+https://712-287085785-gh.circle-artifacts.com/0/dist/splunk_add_on_ucc_framework-4.1.12.post5.dev0%2B99f91870.tar.gz
+lovely-pytest-docker
 reuse
+pytest
+https://download.splunk.com/misc/packaging-toolkit/splunk-packaging-toolkit-1.0.1.tar.gz
+pytest-xdist
+pytest-ordering
+pytest-splunk-addon==1.3.13a11
+pytest-expect
+pytest-splunk-addon-ui-smartx==1.1.0
+pytest-rerunfailures
+mock==3.0.5
+requests
+u-msgpack-python==2.5.0
+six==1.12.0
