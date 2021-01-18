@@ -6,6 +6,7 @@
 ##
 
 cd /home/circleci/work
+pip install pip==20.2
 if [ -f "${TEST_SET}/pytest-ci.ini" ]; then
     cp -f ${TEST_SET}/pytest-ci.ini pytest.ini
 fi
