@@ -12,4 +12,3 @@ class Test_App(Basic):
     def empty_method(self):
         pass
 
-
