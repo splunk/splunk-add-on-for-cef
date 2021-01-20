@@ -640,9 +640,9 @@ workflows:
       - release:
           requires:
             - approval-release
-            - splunk-app-inspect
-            - splunk-app-unit-test
-            - splunk-app-backend-test
+##            - splunk-app-inspect
+##            - splunk-app-unit-test
+##            - splunk-app-backend-test
           context:
             - gdi-github
   publish:
