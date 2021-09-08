@@ -1,2 +1,0 @@
-# pytest-splunk-addon==1.5.0
-# pytest-splunk-addon-ui-smartx==1.1.1
