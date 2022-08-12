@@ -56,4 +56,3 @@ License: LicenseRef-Splunk-8-2021
 Files: *.lock
 Copyright: $YEAR $NAME <$CONTACT>
 License: LicenseRef-Splunk-8-2021
-
