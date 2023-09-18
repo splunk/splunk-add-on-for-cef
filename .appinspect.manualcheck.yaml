@@ -1,0 +1,26 @@
+check_external_data_sources:
+  comment: 'N/A'
+check_splunk_logo:
+  comment: 'Verified'
+check_editing_and_proofreading:
+  comment: 'Verified'
+check_install_on_claimed_targets:
+  comment: 'Verified'
+check_link_includes_contact_info:
+  comment: 'Verified'
+check_for_known_vulnerabilities_in_third_party_libraries:
+  comment: 'N/A'
+check_for_reverse_shells:
+  comment: 'N/A'
+check_authorization_credentials:
+  comment: 'N/A'
+check_embedded_links:
+  comment: 'N/A'
+check_fs_writes:
+  comment: 'N/A'
+check_dependencies:
+  comment: 'N/A'
+check_documented_included_open_source:
+  comment: 'N/A'
+check_requires_access_to_files_outside_apps_dir:
+  comment: 'N/A'
