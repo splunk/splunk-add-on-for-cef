@@ -25,7 +25,7 @@ permissions:
 jobs:
   call-workflow:
     if: github.event.action != 'labeled' || github.actor != 'renovate[bot]'
-    uses: splunk/addonfactory-workflow-addon-release/.github/workflows/reusable-build-test-release.yml@v4.5
+    uses: splunk/addonfactory-workflow-addon-release/.github/workflows/reusable-build-test-release.yml@v4.6
     secrets:
       GH_TOKEN_ADMIN: ${{ secrets.GH_TOKEN_ADMIN }}
       SEMGREP_PUBLISH_TOKEN: ${{ secrets.SEMGREP_PUBLISH_TOKEN }}
