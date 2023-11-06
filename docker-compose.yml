@@ -18,12 +18,6 @@ services:
       - UI_TEST_HEADLESS=${UI_TEST_HEADLESS}
       - RERUN_COUNT=${RERUN_COUNT}
       - TEST_BROWSER=${TEST_BROWSER}
-      - RP_ENDPOINT=${RP_ENDPOINT}
-      - RP_UUID=${RP_UUID}
-      - RP_LAUNCH_ATTRIBUTES=${RP_LAUNCH_ATTRIBUTES}
-      - RP_PROJECT=${RP_PROJECT}
-      - RP_LAUNCH=${RP_LAUNCH}
-      - RP_LAUNCH_DESC=${RP_LAUNCH_DESC}
       - IMAGE_TAG=${IMAGE_TAG}
       - TEST_DEBUG=${TEST_DEBUG}
     env_file:
@@ -57,7 +51,7 @@ services:
     tty: true
     environment:
       - SPLUNK_HEC_URL=https://splunk:8088
-      - SPLUNK_HEC_TOKEN=9b741d03-43e9-4164-908b-e09102327d22
+      - SPLUNK_HEC_TOKEN=${SPLUNK_HEC_TOKEN}
       - SC4S_SOURCE_TLS_ENABLE=no
       - SC4S_DEST_SPLUNK_HEC_TLS_VERIFY=no
       - SC4S_LISTEN_JUNIPER_NETSCREEN_TCP_PORT=5000
@@ -89,6 +83,7 @@ services:
     environment:
       - PROXY_USER=splunk_socks5
       - PROXY_PASSWORD=splunk_socks5
+
   splunk:
     build:
       context: .
@@ -106,14 +101,8 @@ services:
     environment:
       - SPLUNK_PASSWORD=Chang3d!
       - SPLUNK_START_ARGS=--accept-license
-      - SPLUNK_HEC_TOKEN=9b741d03-43e9-4164-908b-e09102327d22
+      - SPLUNK_HEC_TOKEN=${SPLUNK_HEC_TOKEN}
       - TEST_SET=${TEST_SET}
-      - RP_ENDPOINT=${RP_ENDPOINT}
-      - RP_UUID=${RP_UUID}
-      - RP_LAUNCH_ATTRIBUTES=${RP_LAUNCH_ATTRIBUTES}
-      - RP_PROJECT=${RP_PROJECT}
-      - RP_LAUNCH=${RP_LAUNCH}
-      - RP_LAUNCH_DESC=${RP_LAUNCH_DESC}
     env_file:
       - test_credentials.env
     volumes:
@@ -165,20 +154,6 @@ services:
       - SPLUNK_START_ARGS=--accept-license
     volumes:
       - results:/home/circleci/work
-
-  chrome-grid:
-    image: selenium/standalone-chrome-debug:91.0
-    shm_size: 2gb
-    ports:
-      - "6900:5900"
-      - "4444"
-
-  firefox-grid:
-    image: selenium/standalone-firefox-debug:90.0
-    shm_size: 2gb
-    ports:
-      - "6901:5900"
-      - "4444"
 
 volumes:
   results:
