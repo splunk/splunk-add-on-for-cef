@@ -367,7 +367,7 @@ pytest = "*"
 
 [[package]]
 name = "pytest-rerunfailures"
-version = "12.0"
+version = "13.0"
 description = "pytest plugin to re-run tests to eliminate flaky failures"
 category = "dev"
 optional = false
@@ -376,11 +376,11 @@ python-versions = ">=3.7"
 [package.dependencies]
 importlib-metadata = {version = ">=1", markers = "python_version < \"3.8\""}
 packaging = ">=17.1"
-pytest = ">=6.2"
+pytest = ">=7"
 
 [[package]]
 name = "pytest-splunk-addon"
-version = "5.1.0"
+version = "5.2.0"
 description = "A Dynamic test tool for Splunk Apps and Add-ons"
 category = "dev"
 optional = false
@@ -482,7 +482,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "splunk-add-on-ucc-framework"
-version = "5.32.0"
+version = "5.34.0"
 description = "Splunk Add-on SDK formerly UCC is a build and code generation framework"
 category = "dev"
 optional = false
@@ -608,7 +608,7 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "bbeaba7452644a81d93eb6a6924c773785b4c9d42f18edfef446c8cdf39dccbc"
+content-hash = "a3bad852b4acf17449e02a85e2cc3012a5fd65e98a1b2ac2d4f508f5800bc8f4"
 
 [metadata.files]
 addonfactory-splunk-conf-parser-lib = [
@@ -909,12 +909,12 @@ pytest-ordering = [
     {file = "pytest_ordering-0.6-py3-none-any.whl", hash = "sha256:3f314a178dbeb6777509548727dc69edf22d6d9a2867bf2d310ab85c403380b6"},
 ]
 pytest-rerunfailures = [
-    {file = "pytest-rerunfailures-12.0.tar.gz", hash = "sha256:784f462fa87fe9bdf781d0027d856b47a4bfe6c12af108f6bd887057a917b48e"},
-    {file = "pytest_rerunfailures-12.0-py3-none-any.whl", hash = "sha256:9a1afd04e21b8177faf08a9bbbf44de7a0fe3fc29f8ddbe83b9684bd5f8f92a9"},
+    {file = "pytest-rerunfailures-13.0.tar.gz", hash = "sha256:e132dbe420bc476f544b96e7036edd0a69707574209b6677263c950d19b09199"},
+    {file = "pytest_rerunfailures-13.0-py3-none-any.whl", hash = "sha256:34919cb3fcb1f8e5d4b940aa75ccdea9661bade925091873b7c6fa5548333069"},
 ]
 pytest-splunk-addon = [
-    {file = "pytest_splunk_addon-5.1.0-py3-none-any.whl", hash = "sha256:8fbc11cf05a66ea810fe3b61baf7fbc3d0d8e74e134e52c62b074d1aa1fbd33c"},
-    {file = "pytest_splunk_addon-5.1.0.tar.gz", hash = "sha256:c87450fbe52fc36547b8242b70d3cb202ed82f3b1fc4374be4aa554ccb2535e1"},
+    {file = "pytest_splunk_addon-5.2.0-py3-none-any.whl", hash = "sha256:81f696468e38abaa78bf07315965e90d39e91bb6bb5ee6e7aec02d6baf2802f1"},
+    {file = "pytest_splunk_addon-5.2.0.tar.gz", hash = "sha256:57fb8b2dd82717d9fd9e891979ed38f45d7194996ea7e3c546a2f2cdc000fb82"},
 ]
 pytest-xdist = [
     {file = "pytest-xdist-3.3.1.tar.gz", hash = "sha256:d5ee0520eb1b7bcca50a60a518ab7a7707992812c578198f8b44fdfac78e8c93"},
@@ -989,8 +989,8 @@ six = [
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
 splunk-add-on-ucc-framework = [
-    {file = "splunk_add_on_ucc_framework-5.32.0-py3-none-any.whl", hash = "sha256:cc3ad7f3f1f4c734aadfbf07067703085ca004e2c636b1756385f700fe7e538a"},
-    {file = "splunk_add_on_ucc_framework-5.32.0.tar.gz", hash = "sha256:fcadad146ab2a5effc54d222e7c972e724e996077c1600caf8fc390643f6e8cd"},
+    {file = "splunk_add_on_ucc_framework-5.34.0-py3-none-any.whl", hash = "sha256:ef6dbe3cd2883d82b95a08036544331451880a1026fb79b86a5571b376f9fbaf"},
+    {file = "splunk_add_on_ucc_framework-5.34.0.tar.gz", hash = "sha256:06f1d6db5f2fddb83401e34b6fe0b8e92886dce94490d91eaf320e148a33990c"},
 ]
 splunk-packaging-toolkit = [
     {file = "splunk-packaging-toolkit-1.0.1.tar.gz", hash = "sha256:7302af724718256108a6b78ed66c4c0066672223e58881e67897c87eddaf7388"},
